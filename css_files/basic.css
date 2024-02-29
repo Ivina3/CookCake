@@ -1,0 +1,40 @@
+
+/* Ваши стили здесь */
+body {
+  background-color: #D9D9D9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+  margin: 0px;
+  height: 5000px;
+  padding: 0px;
+}
+
+footer{
+
+  height: 10%;
+
+}
+
+.Upper_slider{
+  margin-top: 10%;
+  height: 250px;
+  width: 100%;
+  background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
