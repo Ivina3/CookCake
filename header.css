@@ -1,0 +1,33 @@
+header{
+    height: auto;
+
+}
+
+.Header_Grid{
+    display: grid;
+     grid-template-columns: repeat(3, auto);
+     gap: 10px;
+     height: 10px;
+   }
+   
+   .Sing_In_window{
+     text-align: left;
+     margin-left: 2.5%;
+   }
+   
+   .Registration_window{
+     text-align: right; 
+     margin-right: 2.5%;
+   }
+   
+   .Header_Oval{
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+     top: -50px;
+     height: 100px;
+     width: 100%;
+     background-color: #e59de5;
+     border-radius: 10% 10% 60% 60%;
+   }
+   
