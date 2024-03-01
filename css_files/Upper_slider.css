@@ -50,7 +50,33 @@
     max-height: 100%; /* Убеждаемся, что изображение не превышает высоту родительского блока */
     margin: auto; /* Центрируем изображение внутри блока */
   }
-  
+  .items {
+    position: relative; /* Для позиционирования overlay */
+}
+
+.item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Задаем прозрачный черный цвет */
+    opacity: 0; /* Изначально скрываем overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Плавное появление overlay */
+}
+
+.item:hover .overlay {
+    opacity: 1; /* Показываем overlay при наведении на изображение */
+}
+
+.overlay p {
+    color: white; /* Цвет текста */
+    font-size: 18px; /* Размер шрифта */
+}
+
   
   .item img {
     width: 93%;
@@ -58,11 +84,11 @@
     object-fit: fill;
   }
   
+
   .item.active {
     box-shadow: 20px 9px rgba(0, 0, 0, 0.28);
     opacity: 1;
     z-index: 99;
-  
   }
   
   .item.prev {
