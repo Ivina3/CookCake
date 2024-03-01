@@ -1,0 +1,67 @@
+p{
+    font-family: "Klee One", cursive;
+
+
+}
+.registration_form {
+    background-color: #D0BECE;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.left_picture_container  {
+
+    padding-left: 50px;
+
+    width: 250px;
+    height: 400px;
+}
+
+input{
+    background-color: #D0BECE;
+}
+
+input[type] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    -webkit-transition: 0.5s;
+    
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type]:focus {
+    border: 2px solid #555;
+  }
+
+.form_container{   
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    justify-items: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+
+
+    margin-left: 90px; /* Добавляем отступ слева */
+    background-color:#e59de5;
+    margin-right: 50px;
+    width: 300px;
+    height: 400px;
+}
+
+.div_picture_container{
+    height: 100%;
+}
+
+.div_picture_container img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
