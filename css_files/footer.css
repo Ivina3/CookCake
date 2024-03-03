@@ -9,6 +9,6 @@ footer{
     height: 150px; 
     width: 100%; 
     bottom: 10%;
-    background: #b975b0;
+    background-color: rgba(208, 190, 206, 1.0);
     clip-path: polygon(50% 0, 100% 50%, 100% 100%, 0 100%, 0 50%);
 }
