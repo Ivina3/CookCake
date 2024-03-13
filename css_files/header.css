@@ -1,38 +1,40 @@
-header{
+header {
     height: auto;
-
+    background: radial-gradient(circle, rgb(204, 149, 169) 5%, rgb(223, 211, 211) 60%);
 }
-a{
-  text-decoration: none;
-  font-family: "Klee One", cursive;
-  font-size: 150%;
+
+a {
+    text-decoration: none;
+    font-family: "Klee One", cursive;
+    font-size: 150%;
+    color: #333;
 }
 
 .Header_Grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  gap: 10px;
-  height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 50px;
 }
-   
-   .Sing_In_window{
-     text-align: left;
-     margin-left: 2.5%;
-   }
-   
-   .Registration_window{
-     text-align: right; 
-     margin-right: 2.5%;
-   }
-   
-   .Header_Oval{
-     position: relative;
-     margin-left: auto;
-     margin-right: auto;
-     top: -50px;
-     height: 100px;
-     width: 100%;
-     background-color: rgba(208, 190, 206, 1.0);
-     border-radius: 10% 10% 60% 60%;
-   }
-   
+
+.Sing_In_window {
+    text-align: left;
+    margin-left: 2.5%;
+}
+
+.Registration_window {
+    text-align: right;
+    margin-right: 2.5%;
+    color: #333;
+}
+
+.Header_Oval {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -50px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(226, 154, 176);
+    border-radius: 10% 10% 60% 60%;
+}
