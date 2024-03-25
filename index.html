@@ -12,6 +12,35 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
 
     <style>
+        #view-recipe-btn {
+            background: #a28eaf;
+            border: none;
+            /* Убираем границу */
+            color: white;
+            /* Цвет текста */
+            padding: 10px 20px;
+            /* Отступы внутри кнопки */
+            text-align: center;
+            /* Выравнивание текста по центру */
+            text-decoration: none;
+            /* Убираем подчеркивание текста */
+            display: inline-block;
+            /* Размещаем кнопку как блочный элемент */
+            font-size: 16px;
+            /* Размер текста */
+            margin-top: 20px;
+            /* Отступ сверху */
+            cursor: pointer;
+            /* Курсор при наведении на кнопку */
+            border-radius: 5px;
+            /* Закругляем углы */
+        }
+        
+        #view-recipe-btn:hover {
+            background-color: #a972cb;
+            /* Цвет фона кнопки при наведении */
+        }
+        
         #footer {
             position: absolute;
             bottom: 0;
@@ -27,7 +56,7 @@
         .triangle_bottom {
             height: 150px;
             width: 100%;
-            background-color: rgba(248, 132, 169, 0.7);
+            background-color: rgb(219, 174, 187);
             clip-path: polygon(50% 0, 100% 50%, 100% 100%, 0 200%, 0 50%);
         }
         
@@ -38,8 +67,8 @@
         }
         
         * {
-            margin: 0;
-            padding: 0;
+            /* margin: 0;
+            padding: 0; */
             box-sizing: border-box;
         }
         
@@ -104,6 +133,36 @@
             padding: 20px;
             -webkit-perspective: 0;
             perspective: 0;
+        }
+        
+        figure:hover {
+            border: 3px solid rgb(187, 135, 194);
+            transition: border-color 0.7s ease;
+            /* Здесь можно задать цвет и стиль рамки */
+            animation: changeBorderColor 3s infinite linear;
+        }
+        
+        @keyframes changeBorderColor {
+            0% {
+                border-color: var(#a972cb);
+                /* Начальный цвет */
+            }
+            25% {
+                border-color: var(rgb(173, 51, 165));
+                /* Первый цвет */
+            }
+            50% {
+                border-color: var(#b8528d);
+                /* Второй цвет */
+            }
+            75% {
+                border-color: var(#850c3a);
+                /* Третий цвет */
+            }
+            100% {
+                border-color: var(#9964b9);
+                /* Возвращаемся к начальному цвету */
+            }
         }
         
         @media (max-width: 600px) {
@@ -588,16 +647,16 @@
 <header>
     <div class="Header_Grid">
         <div class="Sing_In_window">
-            <a href="html_files\logIn.html">Войти</a>
+            <a href="logIn.html">Войти</a>
         </div>
         <div class="Plus_window">
             <div class="Header_Oval"></div>
             <!-- Значёк плюса ебать -->
         </div>
         <div class="Registration_window">
-            <a href="html_files\registration.html">Регистрация</a>
+            <a href="registration.html">Регистрация</a>
         </div>
-
+    </div>
 </header>
 
 <body>
@@ -627,24 +686,14 @@
 
                                 <div class="post-actions-content" id="post1" data-visible="false" aria-hidden="true">
                                     <ul role="list" class="grid-flow" data-spacing="small">
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-folder-open"></i>
-                                                <span>Добавить в коллекцию</span>
-                                            </a>
-                                        </li>
+
                                         <li>
                                             <a class="post-actions-link" href="javascript:void(0)">
                                                 <i class="fa-solid fa-eye"></i>
                                                 <span>Посмотреть рецепт</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-user-plus"></i>
-                                                <span>Подписаться на пользователя</span>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -669,24 +718,14 @@
                         </button>
                                 <div class="post-actions-content" id="post2" data-visible="false" aria-hidden="true">
                                     <ul role="list" class="grid-flow" data-spacing="small">
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-folder-open"></i>
-                                                <span>Добавить в коллекцию</span>
-                                            </a>
-                                        </li>
+
                                         <li>
                                             <a class="post-actions-link" href="javascript:void(0)">
                                                 <i class="fa-solid fa-eye"></i>
                                                 <span>Посмотреть рецепт</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-user-plus"></i>
-                                                <span>Подписаться на пользователя</span>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -711,24 +750,14 @@
                         </button>
                                 <div class="post-actions-content" id="post3" data-visible="false" aria-hidden="true">
                                     <ul role="list" class="grid-flow" data-spacing="small">
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-folder-open"></i>
-                                                <span>Добавить в коллекцию</span>
-                                            </a>
-                                        </li>
+
                                         <li>
                                             <a class="post-actions-link" href="javascript:void(0)">
                                                 <i class="fa-solid fa-eye"></i>
                                                 <span>Посмотреть рецепт</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-user-plus"></i>
-                                                <span>Подписаться на пользователя</span>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -753,24 +782,14 @@
                         </button>
                                 <div class="post-actions-content" id="post4" data-visible="false" aria-hidden="true">
                                     <ul role="list" class="grid-flow" data-spacing="small">
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-folder-open"></i>
-                                                <span>Добавить в коллекцию</span>
-                                            </a>
-                                        </li>
+
                                         <li>
                                             <a class="post-actions-link" href="javascript:void(0)">
                                                 <i class="fa-solid fa-eye"></i>
                                                 <span>Посмотреть рецепт</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-user-plus"></i>
-                                                <span>Подписаться на пользователя</span>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -797,20 +816,8 @@
                                     <ul role="list" class="grid-flow" data-spacing="small">
                                         <li>
                                             <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-folder-open"></i>
-                                                <span>Добавить в коллекцию</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
                                                 <i class="fa-solid fa-eye"></i>
                                                 <span>Посмотреть рецепт</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-user-plus"></i>
-                                                <span>Подписаться на пользователя</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -839,20 +846,8 @@
                                     <ul role="list" class="grid-flow" data-spacing="small">
                                         <li>
                                             <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-folder-open"></i>
-                                                <span>Добавить в коллекцию</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
                                                 <i class="fa-solid fa-eye"></i>
                                                 <span>Посмотреть рецепт</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="post-actions-link" href="javascript:void(0)">
-                                                <i class="fa-solid fa-user-plus"></i>
-                                                <span>Подписаться на пользователя</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -870,42 +865,52 @@
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт1 " title="Photo by Jeremy Doddridge for Unsplash">
                         <figcaption>Cake1</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт2 " title="Photo by Matthew Brayer for Unsplash">
                         <figcaption>Cake2</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт3 " title="Photo by Simeon Muller for Unsplash">
                         <figcaption>Cake3</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт4 " title="Photo by Laura Vinck for Unsplash">
                         <figcaption>Cake4</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт5 " title="Photo by Szabo Viktor for Unsplash">
                         <figcaption>Cake5</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт6" title="Photo by Łukasz Łada for Unsplash">
                         <figcaption>Cake6</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src='https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg' alt='Рецепт7' title="Photo by Diego PH for Unsplash">
                         <figcaption>Cake7</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт8" title="Photo by Carlos Kenobi for Unsplash">
                         <figcaption>Caker8</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт9" title="Photo by Alex Machado for Unsplash">
                         <figcaption>Cake9</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
                     <figure>
                         <img src="https://aradbranding.com/en/uploads/topics/mceu_15830412021674381067293.jpg" alt="Рецепт10 " title="Photo by Yulia Gadalina for Unsplash">
                         <figcaption>Cake10</figcaption>
+                        <button id="view-recipe-btn">Посмотреть рецепт</button>
                     </figure>
 
                 </div>

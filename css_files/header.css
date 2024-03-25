@@ -1,6 +1,6 @@
 header {
     height: auto;
-    background: radial-gradient(circle, rgb(204, 149, 169) 5%, rgb(223, 211, 211) 60%);
+    background: radial-gradient(circle, #D0BECE, rgb(223, 211, 211) 60%);
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 .Header_Grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     height: 50px;
 }
 
@@ -35,6 +35,6 @@ a {
     top: -50px;
     height: 100px;
     width: 100%;
-    background-color: rgb(226, 154, 176);
+    background-color: rgb(219, 174, 187);
     border-radius: 10% 10% 60% 60%;
 }
