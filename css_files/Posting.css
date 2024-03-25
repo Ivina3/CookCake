@@ -60,11 +60,8 @@ input[type]:focus {
     display: grid;
     grid-template-rows: repeat(6, auto);
     justify-items: center;
-    /* Центрируем элементы по горизонтали */
     align-items: center;
-    /* Центрируем элементы по вертикали */
     margin-left: 90px;
-    /* Добавляем отступ слева */
     background-color: rgba(231, 140, 216, 0.24);
     margin-right: 50px;
     width: 300px;
