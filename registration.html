@@ -11,7 +11,6 @@
             background-color: #e9e1e9;
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            /* Добавлено для удаления отступов */
         }
         
         header {
@@ -312,17 +311,17 @@
             // Обработчики кликов по кнопкам переключения
             $('#switch1').on('click', function() {
                 switchForms();
-                autoSwitch = false; // Остановить автоматическое переключение после ручного переключения
-                toggleAutoSwitch(); // Остановить автоматическое переключение
+                autoSwitch = false;
+                toggleAutoSwitch();
             });
 
             $('#switch2').on('click', function() {
                 switchForms();
-                autoSwitch = false; // Остановить автоматическое переключение после ручного переключения
-                toggleAutoSwitch(); // Остановить автоматическое переключение
+                autoSwitch = false;
+                toggleAutoSwitch();
             });
 
-            // Запустить автоматическое переключение при загрузке страницы
+
             toggleAutoSwitch();
         });
     </script>

@@ -15,30 +15,19 @@
         #view-recipe-btn {
             background: #a28eaf;
             border: none;
-            /* Убираем границу */
             color: white;
-            /* Цвет текста */
             padding: 10px 20px;
-            /* Отступы внутри кнопки */
             text-align: center;
-            /* Выравнивание текста по центру */
             text-decoration: none;
-            /* Убираем подчеркивание текста */
             display: inline-block;
-            /* Размещаем кнопку как блочный элемент */
             font-size: 16px;
-            /* Размер текста */
             margin-top: 20px;
-            /* Отступ сверху */
             cursor: pointer;
-            /* Курсор при наведении на кнопку */
             border-radius: 5px;
-            /* Закругляем углы */
         }
         
         #view-recipe-btn:hover {
             background-color: #a972cb;
-            /* Цвет фона кнопки при наведении */
         }
         
         #footer {
@@ -47,8 +36,6 @@
             margin-top: 400px;
             width: 100%;
             background-color: rgba(255, 255, 255, 0);
-            /* Прозрачный фон */
-            /* padding: 10px; */
             text-align: center;
             z-index: 999;
         }
@@ -63,7 +50,6 @@
         @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap");
          :root {
             --adjust-size: 0px;
-            /* 必要に応じて */
         }
         
         * {
@@ -126,9 +112,7 @@
             /* gap: 180px; */
             column-gap: 260px;
             display: inline;
-            /* Отступы между картинками */
             justify-content: center;
-            /* Центрирование по горизонтали */
             max-width: 100vw;
             padding: 20px;
             -webkit-perspective: 0;
@@ -138,41 +122,32 @@
         figure:hover {
             border: 3px solid rgb(187, 135, 194);
             transition: border-color 0.7s ease;
-            /* Здесь можно задать цвет и стиль рамки */
             animation: changeBorderColor 3s infinite linear;
         }
         
         @keyframes changeBorderColor {
             0% {
                 border-color: var(#a972cb);
-                /* Начальный цвет */
             }
             25% {
                 border-color: var(rgb(173, 51, 165));
-                /* Первый цвет */
             }
             50% {
                 border-color: var(#b8528d);
-                /* Второй цвет */
             }
             75% {
                 border-color: var(#850c3a);
-                /* Третий цвет */
             }
             100% {
                 border-color: var(#9964b9);
-                /* Возвращаемся к начальному цвету */
             }
         }
         
         @media (max-width: 600px) {
             #gallery {
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                /* Уменьшаем количество колонок для мобильных устройств */
                 gap: 10px;
-                /* Уменьшаем отступы между картинками */
                 padding: 10px;
-                /* Уменьшаем внешний отступ контейнера галереи */
             }
         }
         
