@@ -247,9 +247,18 @@
 
 
                 <div class="Log_In">
-                    <button class="Log_In_BTN"><p class="text_in_form">Сохранить</p></button>
-
+                    <button class="Log_In_BTN" onclick="redirectToAnotherPage()"><p class="text_in_form">Сохранить</p></button>
                 </div>
+
+                <script>
+                    function redirectToAnotherPage() {
+
+                        var nextPageFileName = "post.html";
+
+                        window.location.href = nextPageFileName;
+                    }
+                </script>
+
 
             </div>
 
