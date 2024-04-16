@@ -442,6 +442,10 @@
             background-color: rgb(219, 174, 187);
             clip-path: polygon(50% 0, 100% 50%, 100% 100%, 0 200%, 0 50%);
         }
+        
+        .side:hover h2 {
+            color: rgb(168, 105, 147);
+        }
     </style>
 </head>
 
@@ -449,12 +453,23 @@
 
     <section id="cover">
 
-        <span class="side"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="side" onclick="redirectToAnotherPage()">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-    
+            
             <h2>Вернуться назад</h2>
         </span>
+
+        <script>
+            function redirectToAnotherPage() {
+
+                var nextPageFileName = "index.html";
+
+
+                window.location.href = nextPageFileName;
+            }
+        </script>
 
         <div class="content">
 
