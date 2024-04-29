@@ -3,6 +3,11 @@ header {
     background: radial-gradient(circle, #D0BECE, rgb(223, 211, 211) 60%);
 }
 
+.Header_Grid {
+    height: auto;
+    background: radial-gradient(circle, #D0BECE, rgb(223, 211, 211) 60%);
+}
+
 a {
     text-decoration: none;
     font-family: "Klee One", cursive;

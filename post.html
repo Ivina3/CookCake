@@ -446,6 +446,13 @@
         .side:hover h2 {
             color: rgb(168, 105, 147);
         }
+        
+        #likeButton {
+            background-color: transparent;
+            font-size: 32px;
+            margin-left: 10px;
+            border: 0;
+        }
     </style>
 </head>
 
@@ -477,11 +484,37 @@
                 <img src="https://kartinki.pics/uploads/posts/2021-07/1626136963_44-kartinkin-com-p-klubnichnii-pirog-iz-pesochnogo-testa-yeda-52.jpg" alt="Cake">
                 <figcaption>Photo by Den</figcaption>
             </figure>
-            <h1>Cake</h1>
+
+            <h1>Cake <button id="likeButton" onclick="toggleLike()">&#10084</button></h1>
+
+
+
+
+
             <span><a href="#recipe">Рецепт &#10549;</a></span>
+
         </div>
     </section>
+    <script>
+        let isLiked = false;
 
+        function toggleLike() {
+            const likeButton = document.getElementById('likeButton');
+
+
+            if (isLiked) {
+                likeButton.style.color = 'black';
+
+                isLiked = false;
+            } else {
+                likeButton.style.color = 'red';
+
+                isLiked = true;
+            }
+
+
+        }
+    </script>
     <section id="recipe">
         <h1>Cake</h1>
         <div class="description">
