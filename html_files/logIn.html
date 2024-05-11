@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="../css_files/basic.css"/>
-    <link rel="stylesheet" type="text/css" href="../css_files/header.css"/>
-    <link rel="stylesheet" type="text/css" href="../css_files/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="../css_files/registration.css"/>
-    
-    <title>Печеньки</title>
+    <link rel="stylesheet" type="text/css" href="../css_files/header.css" />
 
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css_files/login.css"/>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="../JS_files/login.js"></script>
 
+    <title>Login and Signup Form</title>
 
 </head>
+<header>
+    <div class="Header_Grid">
+        <div class="Sing_In_window">
+            <a href="index.html">Главное меню</a>
+        </div>
+        <div class="Plus_window">
+            <div class="Header_Oval"></div>
+            <!-- Значёк плюса ебать -->
+        </div>
+
+    </div>
+
+</header>
+
 <body>
 
-    <header>
-        <div class="Header_Grid">
-            <div class="Sing_In_window">
-                <a href="../html_files/logIn.html">Войти</a>
-            </div>
-            <div class="Plus_window">
-                <div class="Header_Oval"></div>
-                <!-- Значёк плюса ебать -->
-            </div>
-            <div class="Registration_window">
-                <a href="../html_files/registration.html">Регистрация</a>
-            </div>
 
+
+    <div class="container">
+        <div class="backbox">
+            <div class="loginMsg">
+                <div class="textcontent">
+                    <p class="title">Don't have an account?</p>
+                    <p>Sign up to save all your graph.</p>
+                    <button id="switch1">Sign Up</button>
+                </div>
+            </div>
+            <div class="signupMsg visibility">
+                <div class="textcontent">
+                    <p class="title">Have an account?</p>
+                    <p>Log in to see all your collection.</p>
+                    <button id="switch2">LOG IN</button>
+                </div>
+            </div>
         </div>
+        <!-- backbox -->
 
-    </header>
-
-
-
-    <main>
-        <div class="registration_form">
-            <div class="left_picture_container">
-                <div class="div_picture_container">
-                    <img src="../Tgr6rF0gываываыC8Q.png">
+        <div class="frontbox">
+            <div class="login">
+                <h2>LOG IN</h2>
+                <div class="inputbox">
+                    <input type="text" name="email" placeholder="  EMAIL">
+                    <input type="password" name="password" placeholder="  PASSWORD">
                 </div>
-                
+                <button onclick="redirectToLoginPage()">LOG IN</button>
             </div>
-            <div class="form_container">
-                <p class="text_in_form">Войти</p>
+            <script>
+                function redirectToLoginPage() {
 
-                <div class="reigistration_form_samll_window input_mail">
-                    
-                    <input type="text" id="nickname" name="nickname" value="nickname" />
-
+                    window.location.href = "profile.html";
+                }
+            </script>
+            <div class="signup hide">
+                <h2>SIGN UP</h2>
+                <div class="inputbox">
+                    <input type="text" name="fullname" placeholder="  FULLNAME">
+                    <input type="text" name="email" placeholder="  EMAIL">
+                    <input type="password" name="password" placeholder="  PASSWORD">
+                    <input type="passwordAgain" name="passwordAgain" placeholder=" REPEAT PASSWORD">
                 </div>
-                <div class="reigistration_form_samll_window input_mail">
-                    
-                    <input type="text" id="nickname" name="nickname" value="nickname" />
-
-                </div>
-
-
-                <div class="Log_In">
-                    <button class="Log_In_BTN"><p class="text_in_form">Войти</p></button>
-
-                </div>
-
+                <button>SIGN UP</button>
             </div>
-
         </div>
- 
+        <!-- frontbox -->
+    </div>
 
-        
-        
-    </main>
-
-
-
-    <footer>
+    <footer id="footer">
         <div class="triangle_bottom"></div>
     </footer>
+
+
 </body>
+
 </html>
